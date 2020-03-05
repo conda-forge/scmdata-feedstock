@@ -1,18 +1,18 @@
 {% set name = "scmdata" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 package:
-  name: "{{ name|lower }}"
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 52ee8db968d363505f409ede1c7e9ce019e796cde5433494c93a4166c2323dc6
+  sha256: 94fb137e80d1d8a9dffda87ffd9cd808ffa593080f277f8389b94ddf2278810d
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
 
 requirements:
   host:
@@ -30,8 +30,7 @@ test:
   imports:
     - scmdata
 
-  commands:
-    python -c "import scmdata; assert scmdata.__version__ == '{{ version }}'"
+  commands: python -c "import scmdata; assert scmdata.__version__ == '{{ version }}'"
 
 about:
   home: https://github.com/lewisjared/scmdata
