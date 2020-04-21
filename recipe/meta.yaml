@@ -33,13 +33,13 @@ test:
   commands: python -c "import scmdata; assert scmdata.__version__ == '{{ version }}'"
 
 about:
-  home: https://github.com/lewisjared/scmdata
+  home: https://github.com/openscm/scmdata
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: Handling of Simple Climate Model data
   doc_url: https://scmdata.readthedocs.io/en/latest/scmdata
-  dev_url: https://github.com/lewisjared/scmdata
+  dev_url: https://github.com/openscm/scmdata
 
 extra:
   recipe-maintainers:
