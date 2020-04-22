@@ -37,7 +37,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: Handling of simple climate model data
+  summary: Handling of simple climate model data (part of the OpenSCM project)
   doc_url: https://scmdata.readthedocs.io/en/latest/scmdata
   dev_url: https://github.com/openscm/scmdata
 
