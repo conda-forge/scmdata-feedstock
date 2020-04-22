@@ -1,5 +1,5 @@
 {% set name = "scmdata" %}
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -17,9 +17,9 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.6
   run:
-    - python >=3.7
+    - python >=3.6
     - cftime
     - numpy
     - openscm-units
