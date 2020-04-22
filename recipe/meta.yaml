@@ -25,6 +25,7 @@ requirements:
     - openscm-units
     - pandas
     - python-dateutil
+    - xarray
 
 test:
   imports:
