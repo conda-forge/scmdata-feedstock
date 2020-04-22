@@ -1,5 +1,5 @@
 {% set name = "scmdata" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 94fb137e80d1d8a9dffda87ffd9cd808ffa593080f277f8389b94ddf2278810d
+  sha256: f90b3c78844ad01c9439820197be16f7f72dba98cad6bec918a81a508a2e28aa
 
 build:
   number: 0
@@ -20,11 +20,12 @@ requirements:
     - python >=3.7
   run:
     - python >=3.7
+    - cftime
     - numpy
-    - scipy
+    - openscm-units
     - pandas
-    - pint
     - python-dateutil
+    - xarray
 
 test:
   imports:
@@ -33,13 +34,13 @@ test:
   commands: python -c "import scmdata; assert scmdata.__version__ == '{{ version }}'"
 
 about:
-  home: https://github.com/lewisjared/scmdata
+  home: https://github.com/openscm/scmdata
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: Handling of Simple Climate Model data
+  summary: Handling of simple climate model data (part of the OpenSCM project)
   doc_url: https://scmdata.readthedocs.io/en/latest/scmdata
-  dev_url: https://github.com/lewisjared/scmdata
+  dev_url: https://github.com/openscm/scmdata
 
 extra:
   recipe-maintainers:
