@@ -23,7 +23,8 @@ requirements:
     - cftime
     - numpy
     - openscm-units
-    - pandas
+    - pandas >=1.0.4
+    - pint-pandas ==0.1.0
     - python-dateutil
     - xarray
 
