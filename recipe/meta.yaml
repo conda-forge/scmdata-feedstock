@@ -1,5 +1,5 @@
 {% set name = "scmdata" %}
-{% set version = "0.7.2" %}
+{% set version = "0.7.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d4ba930ce860413522aab5cd4b4e1cef10c345dd51e464f504bdbecc609b63de
+  sha256: ad3f2df479b19a9a52e23c7555629e9e770b242bb5996447b25e665ee06f3d2b
 
 build:
   number: 0
@@ -17,9 +17,9 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
-    - python >=3.6
+    - python >=3.7
     - cftime
     - numpy
     - openscm-units
