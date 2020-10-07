@@ -10,7 +10,7 @@ source:
   sha256: ad3f2df479b19a9a52e23c7555629e9e770b242bb5996447b25e665ee06f3d2b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
 
@@ -27,6 +27,7 @@ requirements:
     - pint-pandas ==0.1.0
     - python-dateutil
     - xarray
+    - tqdm
 
 test:
   imports:
