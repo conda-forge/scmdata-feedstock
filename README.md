@@ -5,11 +5,13 @@ Home: https://github.com/openscm/scmdata
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scmdata-feedstock/blob/master/LICENSE.txt)
 
 Summary: Handling of simple climate model data (part of the OpenSCM project)
 
+Development: https://github.com/openscm/scmdata
 
+Documentation: https://scmdata.readthedocs.io/en/latest/scmdata
 
 Current build status
 ====================
