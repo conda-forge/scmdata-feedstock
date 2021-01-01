@@ -1,5 +1,5 @@
 {% set name = "scmdata" %}
-{% set version = "0.7.4" %}
+{% set version = "0.7.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d93bef3a68bb5e5dab5a2f118e502655ba58a1468370a1ac83e087e838643f8f
+  sha256: d94183e39cff4386d954fdeb666d4ad90679468a3647f328e2058a7601109086
 
 build:
   number: 0
