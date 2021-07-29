@@ -10,7 +10,7 @@ source:
   sha256: 3fe4825e992ecd41347fe074c280db4e334e8f9a9a864b0537426905ce118453
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
 
@@ -23,11 +23,13 @@ requirements:
     - cftime
     - numpy
     - openscm-units
-    - pandas >=1.0.4,<1.2
-    - pint-pandas ==0.1.0
+    - packaging
+    - pandas >=1.0.4
+    - pint-pandas
     - python-dateutil
-    - xarray
+    - six
     - tqdm
+    - xarray
 
 test:
   imports:
