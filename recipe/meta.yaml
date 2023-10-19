@@ -21,9 +21,10 @@ requirements:
     - poetry
   host:
     - pip
-    - python >=3.7
+    - python >=3.9
+    - poetry
   run:
-    - python >=3.7
+    - python >=3.9
     - cftime
     - numpy
     - openscm-units
