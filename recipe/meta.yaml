@@ -1,5 +1,5 @@
 {% set name = "scmdata" %}
-{% set version = "0.15.0" %}
+{% set version = "0.16.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 631f2061866ae9c49efe0b463314049cde0d09e47ca613b651eea802ebb149ac
+  sha256: 02038d4b1ce68abfecfe729eacde1444f78de58ec8a71bd2b721454a7bee9ec3
 
 build:
   number: 0
@@ -15,24 +15,29 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
 
 requirements:
+  build:
+    - pip
+    - python
+    - poetry
   host:
     - pip
-    - python >=3.7
-    - setuptools_scm
+    - python >=3.9
+    - poetry
   run:
-    - python >=3.7
+    - python >=3.9
     - cftime
     - numpy
     - openscm-units
     - packaging
-    - pandas >=1.0.4
-    - pint <0.20
+    - pandas >=1.1
+    - pint
     - pint-pandas
     - python-dateutil
     - six
     - tqdm
     - xarray
     - importlib-metadata
+    - typing-extensions
 
 test:
   imports:
